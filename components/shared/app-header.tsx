@@ -303,7 +303,7 @@ export function AppHeader({ className = '' }: AppHeaderProps) {
               </p>
               <div className="flex gap-3">
                 <Button variant="outline" asChild className="text-sm whitespace-nowrap">
-                  <Link href="https://fractera.com" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://fractera.ai" target="_blank" rel="noopener noreferrer">
                     Learn More
                   </Link>
                 </Button>

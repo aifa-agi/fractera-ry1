@@ -661,7 +661,7 @@ export function HomeClient() {
             <p>
               Powered by{' '}
               <Link
-                href="https://fractera.com"
+                href="https://fractera.ai"
                 className="text-foreground hover:underline"
               >
                 Fractera
