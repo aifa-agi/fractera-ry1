@@ -1,3 +1,5 @@
+// app/api/chat/ownership/route.ts
+
 import { NextRequest, NextResponse } from 'next/server'
 import { auth } from '@/app/(auth)/auth'
 import { createChatOwnership, createAnonymousChatLog } from '@/lib/db/queries'

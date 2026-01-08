@@ -2,15 +2,13 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { useParams } from 'next/navigation'
-import { AppHeader } from '@/components/shared/app-header'
 import { ChatMessages } from '@/components/chat/chat-messages'
 import { ChatInput } from '@/components/chat/chat-input'
-import { PreviewPanel } from '@/components/chat/preview-panel'
+import { PreviewPanel } from '@/components/chat/preview-panel/preview-panel'
 import { ResizableLayout } from '@/components/shared/resizable-layout'
 import { BottomToolbar } from '@/components/shared/bottom-toolbar'
 import { useChat } from '@/hooks/use-chat'
 import { useStreaming } from '@/contexts/streaming-context'
-import { cn } from '@/lib/utils'
 import {
   type ImageAttachment,
   clearPromptFromStorage,
@@ -72,14 +70,7 @@ export function ChatDetailClient() {
   }, [isLoadingChat])
 
   return (
-    <div
-      className={cn(
-        'min-h-screen bg-gray-50 dark:bg-black',
-        isFullscreen && 'fixed inset-0 z-50',
-      )}
-    >
-      <AppHeader />
-
+    <>
       <div className="flex flex-col h-[calc(100vh-64px-1px)] md:h-[calc(100vh-64px-1px)]">
         <ResizableLayout
           className="flex-1 min-h-0"
@@ -129,6 +120,6 @@ export function ChatDetailClient() {
           />
         </div>
       </div>
-    </div>
+    </>
   )
 }

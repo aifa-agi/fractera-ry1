@@ -1,3 +1,5 @@
+// app/api/chat/route.ts
+
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient, ChatDetail } from 'v0-sdk'
 import { auth } from '@/app/(auth)/auth'

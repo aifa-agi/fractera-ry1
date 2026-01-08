@@ -1,4 +1,4 @@
-import { HomeClient } from '@/components/home/home-client'
+import { HomeClient } from '@/components/home/home-client/home-client'
 import { EnvSetup } from '@/components/env-setup'
 import { hasEnvVars, checkRequiredEnvVars } from '@/lib/env-check'
 

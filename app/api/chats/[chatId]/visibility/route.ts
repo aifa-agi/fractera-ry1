@@ -1,3 +1,5 @@
+// app/api/chats/[chatId]/visibility/route.ts
+
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from 'v0-sdk'
 import { auth } from '@/app/(auth)/auth'

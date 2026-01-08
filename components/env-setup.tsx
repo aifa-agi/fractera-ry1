@@ -1,3 +1,5 @@
+// components/env-setup.tsx
+
 'use client'
 
 import { useState } from 'react'

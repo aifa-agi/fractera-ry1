@@ -4,6 +4,7 @@ import './globals.css'
 import { StreamingProvider } from '@/contexts/streaming-context'
 import { SWRProvider } from '@/components/providers/swr-provider'
 import { SessionProvider } from '@/components/providers/session-provider'
+import { AppHeader } from '@/components/shared/app-header'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -57,7 +58,16 @@ export default function RootLayout({
       >
         <SessionProvider>
           <SWRProvider>
-            <StreamingProvider>{children}</StreamingProvider>
+            <StreamingProvider>
+              <div
+                className=
+                'min-h-screen bg-gray-50 dark:bg-black'
+              >
+                <AppHeader />
+
+                {children}
+              </div>
+            </StreamingProvider>
           </SWRProvider>
         </SessionProvider>
       </body>

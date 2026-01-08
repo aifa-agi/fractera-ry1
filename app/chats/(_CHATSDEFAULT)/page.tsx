@@ -1,3 +1,5 @@
+// app/chats/(_HOME)/page.tsx
+
 import { Suspense } from 'react'
 import { ChatsClient } from '@/components/chats/chats-client'
 
